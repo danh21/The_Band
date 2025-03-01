@@ -1,0 +1,148 @@
+/*----------------------------------------TABLET & MOBILE----------------------------------------------------*/
+@media (max-width: 63.9375em) {
+    .btn { /*btn-buy-ticket btn-send*/
+        margin: 16px 0;
+        padding: 16px 16px;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        border: none;
+    }   
+    
+    /*---------------------------Footer-----------------------*/
+    #footer .social-networks i[class*="ti-"] {
+        font-size: 20px;
+        padding: 6px;
+    }
+
+    #footer .copyright a {
+        color: grey;
+        padding: 8px 0;
+    }
+}
+
+
+
+/*-----------------------------------------------TABLET----------------------------------------------------*/
+@media (min-width: 46.25em) and (max-width: 63.9375em) {    /* >= 740px && <1024px*/
+    #content .content-section {
+        width: 800px;
+        max-width: 100%; /* max-width > width*/
+        margin: 0 auto; /*center*/
+        padding: 64px 16px;
+        text-align: center;  
+    } 
+
+    #modal-ticket {
+        display: none;
+        position: absolute;
+        top: 50px;
+        width: 500px;
+        animation: ModalFadeIn ease .3s;
+    }
+}
+
+
+
+/*-----------------------------------------------MOBILE----------------------------------------------------*/
+@media (max-width: 46.1875em) {     /* < 740px */
+    /*-------------------------------Header-----------------------------*/
+    #nav > li {
+        display: none;
+    }
+    #nav > li:first-child {
+        display: block;
+    }
+
+    #nav > li:hover > a {
+        width: 400%;
+    }
+    #nav > li:first-child:hover > a {
+        width: auto;
+    }
+    
+    #nav li:hover .subnav {
+        display: block;
+        width: 100vh;
+        background-color: rgb(157, 148, 148);
+    }
+    
+    #nav .subnav li:hover a {
+        width: 100vh;
+    }
+
+    #header .btn-search {
+        display: none;
+    }
+
+    #header .btn-menu {
+        display: block;
+    }
+
+    /*-----------------------------------Slider---------------------------*/
+    #slider .text-heading {
+        margin-bottom: 8px;
+        font-size: 22px;
+        font-weight: lighter;
+    }
+
+    /*----------------------------------Content---------------------------*/
+    #content .content-section {
+        width: 100%;
+        margin: 0 auto;
+        padding: 64px 16px;
+        text-align: center;
+    }
+
+    .three-rows-layout {
+        float: left;
+        width: 100%;
+        padding: 16px 8px;
+    }
+    
+    #modal-ticket {
+        display: none;
+        position: absolute;
+        top: 50px;
+        width: 95%;
+        animation: ModalFadeIn ease .3s;
+    }
+    @keyframes ModalFadeIn {
+        from {
+            top: -100px;
+        }
+        to {
+            top: 50px;
+        }
+    } 
+
+    #contact-section .contact-box {
+        display: block;
+        padding: 32px 0;
+        width: 100%;
+        font-size: 18px;
+    }
+    .contact-box .contact-info {
+        width: 100%;
+        padding: 16px 8px;
+        text-align: start;
+        list-style-type: none;
+    }
+
+    .contact-form .contact-your-info {
+        display: block;
+        margin-bottom: 0;
+    }
+    .contact-form .contact-your-info input {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .contact-form input {
+        padding: 14px;
+        border: 1px solid #ccc;
+    }
+
+    
+}
